@@ -1,0 +1,152 @@
+p, a{
+    color: #b5b5b5;
+    font-size: 12px;
+}
+
+.search{
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.search h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    font-size: 26px;
+}
+
+.search p{
+    color: #b5b5b5;
+    font-size: 12px;
+}
+
+.search input[type = "text"]{
+    color: #b5b5b5;
+    font-size: 12px;
+    border: 1px solid #ededed;
+}
+
+.search button{
+    background: #20aeed;
+    width: 100%;
+}
+
+.search h6{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.search a{
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+.doctors {
+    background: #fff;
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.doctors .back{
+    margin: 20px;
+}
+
+.doctors .back:hover{
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+.doctors .media img{
+    border-radius: 100%;
+}
+
+.doctors .media h5{
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 2px 0;
+}
+
+.doctors .media p{
+    color: #b5b5b5;
+    font-size: 12px;
+}
+
+.doctors .media{
+    border-top: 1px solid #f1ecec;
+    border-bottom: 1px solid #f1ecec;
+    padding: 20px 20px 0 20px;
+}
+
+.list {
+    margin: 10px 0;
+}
+
+.media:hover{
+    background: #20aeed;
+}
+
+.media:hover h5, .media:hover p{
+    color: #fff;
+}
+
+.media:hover a{
+    text-decoration: none!important;
+}
+
+.single-doctor{
+    background: #fff;
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.single-doctor .cover>img{
+    width: 100%;
+}
+
+.single-doctor a{
+    margin: 20px;
+}
+
+.single-doctor a:hover{
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+.profile{
+    margin: 10px 0 0 0;
+}
+
+.content{
+    padding: 25px;
+}
+
+.content h5{
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 10px 0 40px 0;
+
+}
+
+.display-picture img{
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+.cover{
+    position: relative;
+}
+
+.display-picture{
+    position: absolute;
+    left: 25px;
+    bottom: -25px;
+}
+
