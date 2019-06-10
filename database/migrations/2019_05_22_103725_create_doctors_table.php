@@ -19,6 +19,8 @@ class CreateDoctorsTable extends Migration
             $table->string('address');
             $table->string('city');
             $table->string('zip_code');
+            $table->string('latitude');
+            $table->string('longitude');
             $table->string('cover');
             $table->string('display_picture');
             $table->timestamps();

@@ -13,6 +13,12 @@ class DoctorsController extends Controller
 
     public function get_all_doctors(){
         $doctors = Doctors::all();
-        var_dump($doctors);die;
+        return response()->json(['success' => 1, 'data' => $doctors]);
     }
+
+    public function profile($id){
+        $doctor = Doctors::findorfail($id);
+        return response()->json(['success' => 1, 'data' => $doctor]);
+    }
+
 }

@@ -1,47 +1,69 @@
-p, a{
-    color: #b5b5b5;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+p, a {
+    color: #909090;
     font-size: 12px;
 }
 
-.search{
+.search {
     background: #fff;
     padding: 30px;
     border-radius: 5px;
     width: 25%;
 }
 
-.search h2{
+.search h2 {
     font-weight: bold;
     margin-bottom: 10px;
     color: #4a4a4a;
     font-size: 26px;
 }
 
-.search p{
-    color: #b5b5b5;
+.search p {
+    color: #909090;
     font-size: 12px;
 }
 
-.search input[type = "text"]{
-    color: #b5b5b5;
+.search input[type = "text"] {
+    color: #909090;
     font-size: 12px;
     border: 1px solid #ededed;
+    padding-left: 30px;
 }
 
-.search button{
+.search i {
+    left: 10px;
+    position: absolute;
+    top: 12px;
+    color: #b9b9b9;
+}
+
+.search .form-group {
+    position: relative;
+}
+
+.search button {
     background: #20aeed;
     width: 100%;
 }
 
-.search h6{
+.search h6 {
     text-align: center;
     margin-top: 10px;
     font-size: 12px;
 }
 
-.search a{
+.search a {
     text-decoration: none;
-    color: #b5b5b5;
+    color: #909090;
 }
 
 .doctors {
@@ -52,31 +74,36 @@ p, a{
     padding: 10px 0;
 }
 
-.doctors .back{
+.doctors .back {
     margin: 20px;
 }
 
-.doctors .back:hover{
+.doctors .back:hover {
     text-decoration: none;
-    color: #b5b5b5;
+    color: #909090;
 }
 
-.doctors .media img{
+.doctors .media img {
     border-radius: 100%;
+    width: 60px;
+    height: 60px;
 }
 
-.doctors .media h5{
+.doctors .media h5 {
     font-weight: bold;
     color: #4a4a4a;
     margin: 2px 0;
+    white-space: nowrap;
+    width: 167px;
+    overflow: hidden;
 }
 
-.doctors .media p{
-    color: #b5b5b5;
+.doctors .media p {
+    color: #909090;
     font-size: 12px;
 }
 
-.doctors .media{
+.doctors .media {
     border-top: 1px solid #f1ecec;
     border-bottom: 1px solid #f1ecec;
     padding: 20px 20px 0 20px;
@@ -84,21 +111,34 @@ p, a{
 
 .list {
     margin: 10px 0;
+    position: absolute;
+    overflow-y: scroll;
+    max-height: 650px;
 }
 
-.media:hover{
+.media:hover {
     background: #20aeed;
 }
 
-.media:hover h5, .media:hover p{
+.media i {
+    float: right;
+    color: #909090;
+    font-size: 11px;
+}
+
+.media img {
+    border: 3px solid white;
+}
+
+.media:hover h5, .media:hover p {
     color: #fff;
 }
 
-.media:hover a{
-    text-decoration: none!important;
+.media:hover a {
+    text-decoration: none !important;
 }
 
-.single-doctor{
+.single-doctor {
     background: #fff;
     width: 25%;
     margin-top: 10px;
@@ -106,47 +146,192 @@ p, a{
     padding: 10px 0;
 }
 
-.single-doctor .cover>img{
+.single-doctor .cover > img {
     width: 100%;
 }
 
-.single-doctor a{
+.single-doctor a {
     margin: 20px;
 }
 
-.single-doctor a:hover{
+.single-doctor a:hover {
     text-decoration: none;
-    color: #b5b5b5;
+    color: #909090;
 }
 
-.profile{
+.profile {
     margin: 10px 0 0 0;
 }
 
-.content{
+.content {
     padding: 25px;
 }
 
-.content h5{
+.content h5 {
     font-size: 24px;
     font-weight: bold;
     color: #4a4a4a;
-    margin: 10px 0 40px 0;
+    margin: 10px 0 20px 0;
 
 }
 
-.display-picture img{
+.display-picture img {
     border-radius: 100%;
     border: 3px solid #fff;
+    width: 70px;
+    height: 70px;
 }
 
-.cover{
+.profile button {
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: left;
+    background: transparent;
+    border: 1px solid #e2e1e1;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 12px;
+    color: #4A4A4A
+}
+
+.profile i {
+    color: dodgerblue;
+    font-size: 17px;
+    padding-right: 2px;
+}
+
+.cover {
     position: relative;
 }
 
-.display-picture{
+.display-picture {
     position: absolute;
     left: 25px;
     bottom: -25px;
 }
 
+.tab {
+    position: relative;
+    margin: 37px 0;
+}
+
+.tab > .search {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+}
+
+.tab > .doctors {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    display: none;
+}
+
+.tab > .single-doctor {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    display: none;
+}
+
+#map {
+    position: unset !important;
+}
+
+/*Map Info Window*/
+
+div#content {
+    padding: 10px 40px;
+    overflow: visible;
+    width: 222px;
+    height: 100px;
+}
+
+div#content h3 {
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.display_picture img {
+    border-radius: 100%;
+    border: 3px solid #fff;
+    width: 70px;
+    height: 70px;
+    margin-top: -75px;
+    margin-left: 33px;
+}
+
+.gm-style-iw-d, .gm-style .gm-style-iw-c {
+    overflow: visible !important;
+}
+
+.gm-style .gm-style-iw-c {
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+
+div#content p {
+    color: #929292;
+    line-height: 16px;
+}
+
+#content .route {
+    float: left;
+    position: absolute;
+    right: 200px;
+    font-size: 17px;
+    color: #20aeed;
+    bottom: 75px;
+}
+
+#content .mobile {
+    float: right;
+    position: absolute;
+    left: 204px;
+    font-size: 17px;
+    color: #20aeed;
+    bottom: 75px;
+}
+
+#content .text {
+    margin: -10px 0;
+}
+
+/*Bars*/
+
+.bars {
+    display: none;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.bars button {
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 17px;
+}
+
+/*Media Queries*/
+
+@media (max-width: 767px) {
+    .tab {
+        /*display: none;*/
+        position: fixed;
+        left: 0;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .search, .doctors, .single-doctor{
+        border-radius: 0;
+    }
+}
